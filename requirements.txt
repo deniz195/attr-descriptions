@@ -1,0 +1,7 @@
+attr
+cattrs
+math
+functools
+logging
+typing
+pytest
