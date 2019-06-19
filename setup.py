@@ -20,6 +20,6 @@ setup(
     author_email='deniz195@gmail.com',
     url='https://github.com/deniz195/attr-descriptions',
     license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
+    packages=find_packages(exclude=('tests', 'docs')),
     install_requires = ['attr','cattrs','logging','functools','typing','math','pytest']
 )
