@@ -1,5 +1,5 @@
 import logging
-
+import pytest
 import typing
 import attr
 import cattr
@@ -18,7 +18,7 @@ def test_get_attr_description():
     assert(x_des =='description for x')
     y_des = get_attr_description(C, 'y')
     assert(y_des =='description for y')
-    with pytest.deprecated_call():
+    with pytest.raises(KeyError):
         get_attr_description(C, 'z')
 
 
